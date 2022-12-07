@@ -9,7 +9,7 @@ function displayTimeDate() {
 
     day = days[d.getDay()];
     date = d.getDate();
-    month = d.getMonth();
+    month = months[d.getMonth()];
     year = d.getFullYear();
     h = d.getHours();
     m = d.getMinutes();
