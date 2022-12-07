@@ -1,4 +1,4 @@
-Window.addEventListener("load", DisplayTime);
+window.addEventListener("load", DisplayTime);
 
 function DisplayTime() {
     const d = new date();
