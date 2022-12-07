@@ -5,7 +5,7 @@ function displayTimeDate() {
     const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
     const refresh = 1000;
-    let day,date,month,year,h,m,s,date,time;
+    let day,date,month,year,h,m,s,time;
 
     day = days[d.getDay()];
     date = d.getDate();
