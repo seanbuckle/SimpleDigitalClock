@@ -8,7 +8,7 @@ function displayTimeDate() {
     let day,date,month,year,h,m,s,time;
 
     day = days[d.getDay()];
-    date = d.getDate();
+    date = d.getDate().toString();
     month = months[d.getMonth()];
     year = d.getFullYear();
     h = d.getHours();
