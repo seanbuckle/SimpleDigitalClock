@@ -1,6 +1,6 @@
 window.addEventListener("load", DisplayTime);
 
-function DisplayTime() {
+function displayTime() {
     let d = new Date();
     let h = d.getHours();
     let m = d.getMinutes()
@@ -12,7 +12,10 @@ function DisplayTime() {
 
     let time = h + ":" + m + ":" + s;
     const refresh = 1000;
-    setTimeout('DisplayTime()', refresh);
+    setTimeout('displayTime()', refresh);
 
     document.getElementById('time').innerHTML = time;
+}
+function displayDate(){
+
 }
