@@ -1,11 +1,12 @@
 window.addEventListener("load", displayTimeDate);
 
 function displayTimeDate() {
-    const d,days,months,refresh;
+    const months,refresh;
+    const d = new Date();
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
     let day,h,m,s,date,time;
-    d = new Date();
-    days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    
     day = days[d.getDay()];
     date = d.getDate();
     month = d.getMonth();
