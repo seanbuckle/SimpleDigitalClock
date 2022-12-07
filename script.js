@@ -5,7 +5,7 @@ function displayTimeDate() {
     const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
     const refresh = 1000;
-    let day,h,m,s,date,time;
+    let day,date,month,year,h,m,s,date,time;
 
     day = days[d.getDay()];
     date = d.getDate();
@@ -14,6 +14,11 @@ function displayTimeDate() {
     h = d.getHours();
     m = d.getMinutes();
     s = d.getSeconds();
+
+    date = date.endsWith("1") ? date + "st"
+        : date.endsWith("2") ? date + "nd"
+        : date.endsWith("3") ? date + "rd"
+        : date + "th";
 
     h = h < 10 ? "0" + h : h;
     m = m < 10 ? "0" + m : m;
