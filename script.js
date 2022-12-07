@@ -1,6 +1,4 @@
-window.addEventListener("load", displayTimeDate);
-
-function displayTimeDate() {
+displayTimeDate = () => {
     const d = new Date();
     const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
@@ -24,13 +22,19 @@ function displayTimeDate() {
     m = m < 10 ? "0" + m : m;
     s = s < 10 ? "0" + s : s;
 
+    changeClock = () => {
+        let ampm = h >= 12 ? " PM" : " AM";
+        h = h % 12;
+        h = h ? h : 12;
+    }
+
     date = day + ", " + date + " " + month + " " + year;
-    time = h + ":" + m + ":" + s;
+    time = h + ":" + m + ":" + s + ampm;
     setTimeout('displayTimeDate()', refresh);
 
     document.getElementById('date').innerHTML = date;
     document.getElementById('time').innerHTML = time;
 }
-function displayDate(){
 
-}
+window.addEventListener("load", displayTimeDate);
+document.getElementById("hour-12-24").addEventListener("click", changeClock);
