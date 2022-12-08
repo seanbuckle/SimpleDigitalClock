@@ -22,3 +22,6 @@ body{
     background: #000000;
     color: #ffffff;
 }
+.time--hide{
+    display: none;
+}
