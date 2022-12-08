@@ -1,3 +1,5 @@
+"use strict";
+
 window.addEventListener("load", displayTimeDate = () => {
     const d = new Date();
     const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
