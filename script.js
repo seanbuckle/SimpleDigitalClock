@@ -1,18 +1,17 @@
-window.addEventListener("load", () =>  {
-    displayTimeDate = () => {
-        const d = new Date();
-        const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-        const refresh = 1000;
-        let day,date,month,year,h,hTwelve,m,s,ampm,time;
-        day = days[d.getDay()];
-        date = d.getDate().toString();
-        month = months[d.getMonth()];
-        year = d.getFullYear();
-        h = d.getHours();
-        m = d.getMinutes();
-        s = d.getSeconds();
-        ampm = h >= 12 ? " PM" : " AM";
+window.addEventListener("load", displayTimeDate = () => {
+    const d = new Date();
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    const refresh = 1000;
+    let day,date,month,year,h,hTwelve,m,s,ampm,time;
+    day = days[d.getDay()];
+    date = d.getDate().toString();
+    month = months[d.getMonth()];
+    year = d.getFullYear();
+    h = d.getHours();
+    m = d.getMinutes();
+    s = d.getSeconds();
+    ampm = h >= 12 ? " PM" : " AM";
         
         date = date.endsWith("1") ? date + "st"
             : date.endsWith("2") ? date + "nd"
@@ -34,9 +33,7 @@ window.addEventListener("load", () =>  {
         document.getElementById('date').innerHTML = date;
         document.getElementById('time').innerHTML = time;
         document.getElementById('time-twelve').innerHTML = timeTwelve;
-    }
-    
-
+    },
     document.getElementById("time-change").addEventListener("click", () => {
         const twelve = document.getElementById('time-twelve');
         const twenty_four = document.getElementById('time');
@@ -47,5 +44,5 @@ window.addEventListener("load", () =>  {
     
         twelve.contain() ? (twelve.remove(),twenty_four.add())
             : (twenty_four.remove(),twelve.add())
-    });
-});
+    })
+);
