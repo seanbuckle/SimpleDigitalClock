@@ -37,4 +37,4 @@ displayTimeDate = () => {
 }
 
 window.addEventListener("load", displayTimeDate);
-document.getElementById("hour-12-24").addEventListener("click", changeClock);
+document.getElementById("time-change").addEventListener("click", changeClock);
