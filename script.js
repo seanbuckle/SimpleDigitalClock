@@ -28,7 +28,7 @@ displayTimeDate = () => {
 
     date = day + ", " + date + " " + month + " " + year;
     time = h + ":" + m + ":" + s;
-    timeTwelve = h + ":" + m + ":" + s + ampm;
+    timeTwelve = hTwelve + ":" + m + ":" + s + ampm;
     setTimeout('displayTimeDate()', refresh);
 
     document.getElementById('date').innerHTML = date;
