@@ -38,7 +38,7 @@ window.addEventListener("load", displayTimeDate = () => {
         const twelve = document.getElementById('time-twelve').classList;
         const twenty_four = document.getElementById('time').classList;
     
-        twelve.contains("time--hide") ? (twelve.remove(),twenty_four.add("time--hide"))
+        twelve.contains("time--hide") ? (twelve.remove("time--hide"),twenty_four.add("time--hide"))
             : (twenty_four.remove("time--hide"),twelve.add("time--hide"))
     })
 );
