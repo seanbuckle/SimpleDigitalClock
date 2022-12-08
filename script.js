@@ -29,7 +29,7 @@ window.addEventListener("load", () =>  {
     date = day + ", " + date + " " + month + " " + year;
     time = h + ":" + m + ":" + s;
     timeTwelve = hTwelve + ":" + m + ":" + s + ampm;
-    setTimeout('displayTimeDate()', refresh);
+    setTimeout('this', refresh);
 
     document.getElementById('date').innerHTML = date;
     document.getElementById('time').innerHTML = time;
