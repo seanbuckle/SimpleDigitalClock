@@ -37,10 +37,9 @@ window.addEventListener("load", displayTimeDate = () => {
     document.getElementById("time-change").addEventListener("click", () => {
         const twelve = document.getElementById('time-twelve');
         const twenty_four = document.getElementById('time');
-        const hide = "time--hide"
-        const contain = classList.contains(hide);
-        const add = classList.add(hide);
-        const remove = classList.remove(hide);
+        const contain = classList.contains("time--hide");
+        const add = classList.add("time--hide");
+        const remove = classList.remove("time--hide");
     
         twelve.contain() ? (twelve.remove(),twenty_four.add())
             : (twenty_four.remove(),twelve.add())
