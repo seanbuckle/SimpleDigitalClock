@@ -41,7 +41,7 @@ changeClock = () => {
     const twenty_four = document.getElementById('time');
     const hide = "time--hide"
     const contain = classList.contains(hide);
-    const add = classList.remove(hide);
+    const add = classList.add(hide);
     const remove = classList.remove(hide);
 
     twelve.contain ? (twelve.remove,twenty_four.add)
