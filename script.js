@@ -48,6 +48,6 @@ function changeTime() {
         twelve.contains("time--hide") ? (twelve.remove("time--hide"),twenty_four.add("time--hide"))
             : (twenty_four.remove("time--hide"),twelve.add("time--hide"))
         
-        btnTime.innerHTML === "12-hour" ?  btnTime.innerHTML = "24-hour" : btnTime.innerHTML = "12-hour";
+        btnTime.innerHTML === "Switch to 12-hour" ?  btnTime.innerHTML = "Switch to 24-hour" : btnTime.innerHTML = "Switch to 12-hour";
     });
 }
