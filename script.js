@@ -1,4 +1,4 @@
-displayTimeDate = () => {
+window.addEventListener("load", () =>  {
     const d = new Date();
     const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
@@ -34,19 +34,16 @@ displayTimeDate = () => {
     document.getElementById('date').innerHTML = date;
     document.getElementById('time').innerHTML = time;
     document.getElementById('time-twelve').innerHTML = timeTwelve;
-}
 
-changeClock = () => {
-    const twelve = document.getElementById('time-twelve');
-    const twenty_four = document.getElementById('time');
-    const hide = "time--hide"
-    const contain = classList.contains(hide);
-    const add = classList.add(hide);
-    const remove = classList.remove(hide);
-
-    twelve.contain ? (twelve.remove,twenty_four.add)
-        : (twenty_four.remove,twelve.add)
-}
-
-window.addEventListener("load", displayTimeDate);
-document.getElementById("time-change")?.addEventListener("click", changeClock, false);
+    document.getElementById("time-change").addEventListener("click", () => {
+        const twelve = document.getElementById('time-twelve');
+        const twenty_four = document.getElementById('time');
+        const hide = "time--hide"
+        const contain = classList.contains(hide);
+        const add = classList.add(hide);
+        const remove = classList.remove(hide);
+    
+        twelve.contain() ? (twelve.remove(),twenty_four.add())
+            : (twenty_four.remove(),twelve.add())
+    });
+});
