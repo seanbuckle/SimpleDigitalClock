@@ -10,8 +10,21 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font: 400 16px/24px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+h1{
+    font-size: 75px;
+}
+
+.time{
+    font-size: 50px;
+}
+.time--hide{
+    display: none;
+}
+.date{
+    font-size: 25px;
 }
 .btn{
     height: 40px;
@@ -22,6 +35,4 @@ body{
     background: #000000;
     color: #ffffff;
 }
-.time--hide{
-    display: none;
-}
+
