@@ -49,4 +49,4 @@ changeClock = () => {
 }
 
 window.addEventListener("load", displayTimeDate);
-document.getElementById("time-change").addEventListener("click", changeClock);
+document.getElementById("time-change")?.addEventListener("click", changeClock);
