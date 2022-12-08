@@ -48,9 +48,5 @@ changeClock = () => {
         : (twenty_four.remove,twelve.add)
 }
 
-window.addEventListener("load", displayTimeDate, () => {
-    document.getElementById("time-change")?.addEventListener("click", changeClock, () => {
-        console.log('btn clicked');
-    });
-});
-
+window.addEventListener("load", displayTimeDate);
+document.getElementById("time-change")?.addEventListener("click", changeClock, false);
