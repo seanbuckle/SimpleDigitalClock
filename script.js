@@ -35,13 +35,10 @@ window.addEventListener("load", displayTimeDate = () => {
         document.getElementById('time-twelve').innerHTML = timeTwelve;
     },
     document.getElementById("time-change").addEventListener("click", () => {
-        const twelve = document.getElementById('time-twelve');
-        const twenty_four = document.getElementById('time');
-        const contain = classList.contains("time--hide");
-        const add = classList.add("time--hide");
-        const remove = classList.remove("time--hide");
+        const twelve = document.getElementById('time-twelve').classList;
+        const twenty_four = document.getElementById('time').classList;
     
-        twelve.contain() ? (twelve.remove(),twenty_four.add())
-            : (twenty_four.remove(),twelve.add())
+        twelve.contains("time--hide") ? (twelve.remove(),twenty_four.add("time--hide"))
+            : (twenty_four.remove("time--hide"),twelve.add("time--hide"))
     })
 );
