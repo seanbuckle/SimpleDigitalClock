@@ -36,5 +36,17 @@ displayTimeDate = () => {
     document.getElementById('time-twelve').innerHTML = timeTwelve;
 }
 
+changeClock = () => {
+    const twelve = document.getElementById('time-twelve');
+    const twenty_four = document.getElementById('time');
+    const hide = "time--hide"
+    const contain = classList.contains(hide);
+    const add = classList.remove(hide);
+    const remove = classList.remove(hide);
+
+    twelve.contain ? (twelve.remove,twenty_four.add)
+        : (twenty_four.remove,twelve.remove)
+}
+
 window.addEventListener("load", displayTimeDate);
 document.getElementById("time-change").addEventListener("click", changeClock);
