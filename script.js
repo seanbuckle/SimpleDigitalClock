@@ -45,7 +45,7 @@ changeClock = () => {
     const remove = classList.remove(hide);
 
     twelve.contain ? (twelve.remove,twenty_four.add)
-        : (twenty_four.remove,twelve.remove)
+        : (twenty_four.remove,twelve.add)
 }
 
 window.addEventListener("load", displayTimeDate);
